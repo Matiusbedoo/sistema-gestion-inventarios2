@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import prisma from '@/services/prisma'
 import { checkPrivateApi } from '@/utils/checkServerSession';
-import { useSession } from 'next-auth/react';
 import { Enum_MovementType, InventoryMovement } from "@prisma/client";
 
 interface ResponseData {
@@ -56,7 +55,8 @@ const inventoriesApi = async (
             if (movementType === Enum_MovementType.ENTRADA) {
                 totalSaldo = material.quantity + quantity
             }
-            const inventory = await prisma.inventoryMovement.create({
+            
+            await prisma.inventoryMovement.create({
                 data: {
                     movementType: movementType,
                     quantity: parseInt(quantity),
@@ -65,6 +65,7 @@ const inventoriesApi = async (
                             id: userId,
                         },
                     },
+                    
                     material: {
                         connect: {
                             id: materialId
@@ -85,7 +86,8 @@ const inventoriesApi = async (
             //TODO: Restar y validar la cantidad en el objeto Material
 
         }
-
+        
+        
         return res.status(405).json({ message: 'Method not allowed' });
     } catch {
         return res.status(500).json({ message: 'Internal server error' });

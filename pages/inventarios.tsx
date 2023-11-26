@@ -21,7 +21,7 @@ const Inventory = () => {
   const { inventories } = useGetInventories(materialId);
 
   const nameMaterial = materials?.find((r) => r.id === materialId)?.name ?? "";
-  const handleMaterialChange = (e: { target: { value: any; }; }) => {
+  const handleMaterialChange = (e: { target: { value: string; }; }) => {
     const selectedId = e.target.value;
     const selectedMaterial = materials.find((mat) => mat.id === selectedId);
 

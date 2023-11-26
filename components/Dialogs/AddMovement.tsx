@@ -37,7 +37,7 @@ const AddMovement = ({ open, setDialogOpen, material, materialId }: deliverables
     };
 
     //Petición al back para realizar el POST con los datos del movimiento
-    const handleConfirmAddMovement = async () => {
+    const usehandleConfirmAddMovement = async () => {
 
         const confirmation = toast.loading("Please wait...");
 
@@ -66,15 +66,15 @@ const AddMovement = ({ open, setDialogOpen, material, materialId }: deliverables
             <div className="space-y-4 flex flex-col">
 
                 <div className="text-slate-200 font-light text-md flex flex-col justify-center items-center space-y-2">
-                    <label>Selecciona un movimiento</label>
+                    <label htmlFor="nombreDeUsuario">Selecciona un movimiento</label>
                     <SelecMenu onTipoMovementChange={handleTipoMovementChange} />
                 </div>
                 <div className="text-slate-200 pb-3 font-light text-md flex flex-col justify-center items-center space-y-2">
-                    <label>Cantidad del material</label>
+                    <label htmlFor="cantidadMaterial">Cantidad del material</label>
                     <TextField value={numberValue} onChange={handleNumberChange} />
                 </div>
                 <div className="flex flex-row gap-4 mb-5 justify-center">
-                <Button text="Guardar" type="secondary" handleClick={handleConfirmAddMovement} />
+                <Button text="Guardar" type="secondary" handleClick={usehandleConfirmAddMovement} />
 
                     <Button text="Cancelar" type="secondary" handleClick={
                         () => { setDialogOpen(false) }

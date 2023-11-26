@@ -53,7 +53,7 @@ const ChangeRoleUserDialog = ({ open, setDialogOpen, user }: ChangeRoleUserProps
         // Puedes agregar lógica adicional si es necesario
     };
 
-    const handleConfirmChangeRole = async () => {
+    const usehandleConfirmChangeRole = async () => {
         setLoading(true);
         const confirmation = toast.loading("Por favor espere...");
 
@@ -111,7 +111,7 @@ const ChangeRoleUserDialog = ({ open, setDialogOpen, user }: ChangeRoleUserProps
             <ConfirmationDialog
                 open={showChangeConfirmation}
                 setOpen={setShowChangeConfirmation}
-                onConfirm={handleConfirmChangeRole}
+                onConfirm={usehandleConfirmChangeRole}
                 onCancel={handleDesertCancel}
                 title="Confirmación de cambio de rol"
                 message="¿Estás seguro de cambiar el rol del usuario?"
