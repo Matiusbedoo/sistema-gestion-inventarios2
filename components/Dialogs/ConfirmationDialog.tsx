@@ -35,4 +35,4 @@ const ConfirmationDialog = ({ open, setOpen, onConfirm, onCancel, title, message
   );
 };
 
-export default ConfirmationDialog;
+export {ConfirmationDialog} ;
