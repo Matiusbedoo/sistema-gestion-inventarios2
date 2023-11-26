@@ -4,7 +4,7 @@ CREATE TYPE "Enum_MovementType" AS ENUM ('ENTRADA', 'SALIDA');
 -- CreateEnum
 CREATE TYPE "Enum_RoleName" AS ENUM ('ADMIN', 'USER');
 
--- CreateTable
+-- CreateTable--
 CREATE TABLE "Account" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
