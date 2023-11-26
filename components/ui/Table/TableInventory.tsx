@@ -36,7 +36,7 @@ const TableInventory = ({ inventaries, material }: TableProps) => {
 
               </div>
             </td>
-            <td>Acá la cantidad en el material</td>
+            <td>{material?.quantity}</td>
             <td>{users?.find((r) => r.id === inventory.userId)?.name ?? ""}</td>
           </tr>
         ))}
