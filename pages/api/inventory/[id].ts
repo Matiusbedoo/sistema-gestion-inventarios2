@@ -34,7 +34,6 @@ const inventoryApi = async (
             return res.status(200).json({ inventories: updatedInventory });
             
         }
-        console.log (inventoryApi)
         return res.status(405).json({ message: 'Method not allowed' });
         
     } catch {
