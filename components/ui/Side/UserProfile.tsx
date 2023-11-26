@@ -6,7 +6,7 @@ const UserProfile = () => {
   const { data, status } = useSession();
 
   return (
-    <div className="flex flex-col items-center gap-4  bg-[#03071E] pt-12 p-">
+    <div className="flex flex-col items-center gap-4  bg-[#03071E]">
       {status === "authenticated" && (
         <>
           <div className="relative pt-4">

@@ -20,21 +20,21 @@ const GraphInventory = () => {
           argumentField="day"
           name="Salidas Totales Diarias"
           type="bar"
-          color="#ffaa66" />
+          color="#FFA500" />
         
         <Series
           valueField="Entradas"
           argumentField="day"
           name="Entradas Totatales Diarias"
           type="bar"
-          color="#ff0000" />
+          color="#E85D04" />
         
         <Series
           valueField="Saldo"
           argumentField="day"
           name="Saldo total Actual del Material"
           type="bar"
-          color="#008000" />
+          color="#03071E" />
       </Chart>
     </div>
   )
