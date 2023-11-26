@@ -5,7 +5,7 @@ import { mutate } from 'swr';
 import { API_ROUTES } from '@/services/apiConfig';
 import { toast } from "react-toastify";
 import { PrimaryActionButton } from "@/components/ui/Buttons/PrimaryActionButton";
-import ConfirmationDialog from "./ConfirmationDialog";
+import {ConfirmationDialog }from "./ConfirmationDialog";
 import { usePutUserRole } from "@/hooks/usePutUserRole";
 import { DialogBase } from "./DialogBase";
 

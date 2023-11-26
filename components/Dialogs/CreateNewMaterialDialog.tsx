@@ -3,7 +3,7 @@ import React, { Dispatch, SetStateAction, useState } from 'react';
 import { PrimaryActionButton } from "@/components/ui/Buttons/PrimaryActionButton";
 import { TextField } from "@/components/general/TextField";
 import { toast } from "react-toastify";
-import ConfirmationDialog from "./ConfirmationDialog";
+import {ConfirmationDialog} from "./ConfirmationDialog";
 import { DialogBase } from "./DialogBase";
 import { mutate } from 'swr';
 import { usePostMaterial } from "@/hooks/usePostMaterial";
