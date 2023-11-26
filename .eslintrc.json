@@ -2,7 +2,6 @@
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
@@ -23,6 +22,7 @@
   },
   "plugins": ["react", "@typescript-eslint", "jsx-a11y", "import"],
   "rules": {
+    "jsx-a11y/label-has-associated-control": "off",
     "func-style": ["error", "expression"],
     "react/function-component-definition": [
       "error",
