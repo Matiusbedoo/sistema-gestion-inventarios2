@@ -15,6 +15,10 @@
     "env": {
     },
     "functions": {
+      "dummy": {
+        "handler": "index.handler",
+        "runtime": "nodejs14.x"
+      }
     },
     "routes": {
     }
