@@ -22,6 +22,4 @@
         "runtime": "nodejs14.x"
       }
     },
-    "routes": {
-    }
-  }
+    "routes": [],
